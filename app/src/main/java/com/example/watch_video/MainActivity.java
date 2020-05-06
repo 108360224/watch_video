@@ -1,14 +1,11 @@
-package com.example.myapplication;
+package com.example.watch_video;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import com.chaquo.python.Kwarg;
-import com.chaquo.python.PyObject;
+
 import com.chaquo.python.android.AndroidPlatform;
 import com.chaquo.python.Python;
-
-import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {

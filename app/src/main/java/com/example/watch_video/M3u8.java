@@ -1,8 +1,7 @@
-package com.example.myapplication;
+package com.example.watch_video;
 
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
-import java.util.List;
 
 public class M3u8 {
     private PyObject m3u8;

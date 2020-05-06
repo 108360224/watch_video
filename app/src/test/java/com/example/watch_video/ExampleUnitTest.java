@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.watch_video;
 
 import org.junit.Test;
 

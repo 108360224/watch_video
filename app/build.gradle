@@ -17,7 +17,7 @@ android {
         }
     }
     defaultConfig {
-        applicationId "com.example.myapplication"
+        applicationId "com.example.watch_video"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
