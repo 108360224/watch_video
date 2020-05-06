@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         String f1=film.film_list.url(0);
         film.load_new_film();
         film.goto_area("日本");
+        film.sort_by("vod_hits");
         String f2=film.film_list.url(1);
         String img=film.film_list.img(0);
         Log.d(TAG,"f1 = "+f1+"f2="+f2+"img="+img);

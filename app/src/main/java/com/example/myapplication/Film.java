@@ -20,6 +20,10 @@ public class Film {
         this.film.callAttr("goto_area",area);
         this.film_list = new Film_list(this.film);
     }
+    void sort_by(String order){
+        this.film.callAttr("sort_by",order);
+        this.film_list = new Film_list(this.film);
+    }
 
 }
 class Film_list{

@@ -33,7 +33,10 @@ Film
 	- update film_list to next page
 - ***void*** goto_area(***String*** `area`)
 	- update film_list to `area`
-		- area:'香港','台灣','大陸','日本','韓國','歐美','泰國','新馬','印度','海外'
+		- `area`:"香港","台灣","大陸","日本","韓國","歐美","泰國","新馬","印度","海外"
+- ***void*** sort_by(***String*** `order`)
+	- update film_list to `order`
+		- `order`:"vod\_addtime","vod\_hits","vod\_hits\_month","vod\_hits\_day","vod\_hits\_week","vod\_gold","vod\_golder","vod\_up"
 - **Film_list**
  	- url_list
 	- text_list
@@ -63,6 +66,7 @@ M3u8
 - **M3u8**(***Python*** `py`)
 - ***String*** get\_m3u8(***String*** `url`)
 	- return https://......index.m3u8
+	- if not exit return "not exit"
 
 Search 
 -

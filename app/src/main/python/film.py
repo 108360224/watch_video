@@ -36,6 +36,28 @@ class Film():
         
     def get_film_list(self):
         return self.film_list
+    def sort_by(self,sort):
+        url_list=()
+        img_list=()
+        title_list=()
+        tag=self.soup.select_one('body > div.main > div.list > div.listlf > div')
+        a=tag.find_all('a')[-1]
+        self.URL=re.sub(r'order.+%20desc','order-'+sort+'%20desc',self.URL)
+        html = requests.get(self.URL).text
+        self.soup = BeautifulSoup(html, 'lxml')
+        
+        ul=self.soup.select_one('body > div.main > div.list > div.listlf > ul')
+        
+        for li in ul.select('li'):
+            a=li.select('a')[0]
+            url_list+=(a['href'],)
+            img=a.find_all('img')[0]
+
+
+            im=img['data-original']
+            img_list+=(im,)
+            title_list+=(img['alt'],)
+        self.film_list=(url_list,title_list,img_list)
     def goto_area(self,area):
         url_list=()
         img_list=()
